@@ -4,8 +4,10 @@ import com.example.demo.model.Recurso;
 import com.example.demo.model.Tarea;
 import com.example.demo.model.CargaHoras;
 import com.example.demo.service.CargaHorasService;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.aspectj.lang.annotation.Before;
-import cucumber.api.*;
 import org.junit.Assert;
 
 public class ModuloRecursosTest {
