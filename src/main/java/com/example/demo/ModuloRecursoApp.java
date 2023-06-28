@@ -27,6 +27,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @SpringBootApplication
@@ -43,7 +44,7 @@ public class ModuloRecursoApp {
 
         SpringApplication.run(ModuloRecursoApp.class, args);
     }
-/*
+
     @PostMapping("/cargaHoras")
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<String> cargarHoras(@RequestBody CargaHoras cargaHoras) {
@@ -54,7 +55,7 @@ public class ModuloRecursoApp {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("No se pudo cargar las horas");
         }
     }
-*/
+
 @PostMapping("/cargaHoras")
 @ResponseStatus(HttpStatus.CREATED)
 @ApiOperation(value = "Cargar horas", notes = "Cargar las horas trabajadas por un recurso")
